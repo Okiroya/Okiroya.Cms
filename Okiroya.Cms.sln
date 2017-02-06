@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Okiroya.Cms", "Okiroya.Cms\Okiroya.Cms.xproj", "{FDDAFDC2-A471-4959-8B67-B4246EE4AE79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cms.core", "cms.core", "{2E5E829F-9164-435A-AA88-E5CF1E13DFF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{17C34673-A918-4558-98BB-B75A3C01A3D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cms.administration", "cms.administration", "{836BE6C1-D6C6-490F-BDB9-27986A60B09E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Okiroya.Cms.BaseWebsite", "sample\Okiroya.Cms.BaseWebsite\Okiroya.Cms.BaseWebsite.xproj", "{4843C95E-DB2E-4FEB-A8F3-9D9A3383CC7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{A2AF3BAB-BB31-4DA1-AEBB-A2230A5E4705}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Okiroya.Campione", "..\Campione\src\Okiroya.Campione\Okiroya.Campione.xproj", "{D6D2A754-65CF-4D34-BD55-FEA3A4275F16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC588D03-FE26-4388-8002-4D574498147E}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Okiroya.Campione.DataAccess.EntityFrameworkCore", "..\Campione\providers\Okiroya.Campione.DataAccess.EntityFrameworkCore\Okiroya.Campione.DataAccess.EntityFrameworkCore.xproj", "{4360672A-6D5D-4890-A7E9-D6ABEAB7F2C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A8798CED-9DEE-4D86-B177-2B94D9FA3F26}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Okiroya.Cms.Tests", "Okiroya.Cms.Tests\Okiroya.Cms.Tests.xproj", "{782C7FB3-A250-4C25-8039-090F667D80CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cms.db", "cms.db", "{4AE7BF34-F7AF-460A-9E41-75396BA47408}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Okiroya.Cms.Db", "Okiroya.Cms.Db\Okiroya.Cms.Db.sqlproj", "{AC6B117B-AABE-453C-B687-60276A144DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDDAFDC2-A471-4959-8B67-B4246EE4AE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDAFDC2-A471-4959-8B67-B4246EE4AE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDAFDC2-A471-4959-8B67-B4246EE4AE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDAFDC2-A471-4959-8B67-B4246EE4AE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4843C95E-DB2E-4FEB-A8F3-9D9A3383CC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4843C95E-DB2E-4FEB-A8F3-9D9A3383CC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4843C95E-DB2E-4FEB-A8F3-9D9A3383CC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4843C95E-DB2E-4FEB-A8F3-9D9A3383CC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D2A754-65CF-4D34-BD55-FEA3A4275F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D2A754-65CF-4D34-BD55-FEA3A4275F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D2A754-65CF-4D34-BD55-FEA3A4275F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D2A754-65CF-4D34-BD55-FEA3A4275F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4360672A-6D5D-4890-A7E9-D6ABEAB7F2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4360672A-6D5D-4890-A7E9-D6ABEAB7F2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4360672A-6D5D-4890-A7E9-D6ABEAB7F2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4360672A-6D5D-4890-A7E9-D6ABEAB7F2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782C7FB3-A250-4C25-8039-090F667D80CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782C7FB3-A250-4C25-8039-090F667D80CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782C7FB3-A250-4C25-8039-090F667D80CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782C7FB3-A250-4C25-8039-090F667D80CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC6B117B-AABE-453C-B687-60276A144DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6B117B-AABE-453C-B687-60276A144DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6B117B-AABE-453C-B687-60276A144DDA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC6B117B-AABE-453C-B687-60276A144DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6B117B-AABE-453C-B687-60276A144DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC6B117B-AABE-453C-B687-60276A144DDA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDDAFDC2-A471-4959-8B67-B4246EE4AE79} = {2E5E829F-9164-435A-AA88-E5CF1E13DFF9}
+		{4843C95E-DB2E-4FEB-A8F3-9D9A3383CC7F} = {17C34673-A918-4558-98BB-B75A3C01A3D3}
+		{D6D2A754-65CF-4D34-BD55-FEA3A4275F16} = {A2AF3BAB-BB31-4DA1-AEBB-A2230A5E4705}
+		{4360672A-6D5D-4890-A7E9-D6ABEAB7F2C5} = {A2AF3BAB-BB31-4DA1-AEBB-A2230A5E4705}
+		{782C7FB3-A250-4C25-8039-090F667D80CE} = {A8798CED-9DEE-4D86-B177-2B94D9FA3F26}
+		{AC6B117B-AABE-453C-B687-60276A144DDA} = {4AE7BF34-F7AF-460A-9E41-75396BA47408}
+	EndGlobalSection
+EndGlobal

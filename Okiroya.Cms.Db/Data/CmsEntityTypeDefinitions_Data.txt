@@ -1,0 +1,9 @@
+EntityTypeId,EntityTypeName
+1,CmsTemplate
+2,CmsPage
+3,CmsPageControl
+4,CmsContent
+5,CmsViewComponent
+6,CmsMediaContent
+7,CmsContentType
+8,CmsRewriteRule

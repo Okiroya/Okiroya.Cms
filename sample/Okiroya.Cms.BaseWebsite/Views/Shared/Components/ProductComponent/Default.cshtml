@@ -1,0 +1,16 @@
+﻿@model ProductModel
+@if (Model != null)
+{
+    <p>@Model.Name</p>
+    <p>@Model.Description</p>
+    <p>@Model.Url</p>
+    if (Model.HasImages)
+    {
+        foreach(var image in Model.Images)
+        {
+            <span>@image.Title</span>
+        }
+    }
+    <p>@Model.PriceValue</p>
+    <p>@Model.WeightValue</p>
+}

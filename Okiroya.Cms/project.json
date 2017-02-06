@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc.Razor": "1.1.1",
+    "Microsoft.AspNetCore.Rewrite": "1.0.0",
+    "NETStandard.Library": "1.6.1",
+    "Okiroya.Campione": "1.0.0-*",
+    "Okiroya.Campione.DataAccess.EntityFrameworkCore": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

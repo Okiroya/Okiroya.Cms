@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Okiroya.Cms.Db</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ac6b117b-aabe-453c-b687-60276a144dda}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Okiroya.Cms.Db</RootNamespace>
+    <AssemblyName>Okiroya.Cms.Db</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\Site" />
+    <Folder Include="Tables\Template" />
+    <Folder Include="Tables\Page" />
+    <Folder Include="Tables\Content" />
+    <Folder Include="Tables\Media" />
+    <Folder Include="Tables\Meta" />
+    <Folder Include="Tables\Workflow" />
+    <Folder Include="Tables\Revision" />
+    <Folder Include="Views" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Functions" />
+    <Folder Include="StoredProcedures\Frontend" />
+    <Folder Include="StoredProcedures\Administration" />
+    <Folder Include="StoredProcedures\Frontend\Page" />
+    <Folder Include="StoredProcedures\Frontend\UI" />
+    <Folder Include="StoredProcedures\Frontend\Special" />
+    <Folder Include="StoredProcedures\Frontend\Content" />
+    <Folder Include="Settings" />
+    <Folder Include="Data" />
+    <Folder Include="Tables\Rewrite" />
+    <Folder Include="StoredProcedures\Frontend\Rewrite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Site\CmsSites.sql" />
+    <Build Include="Tables\Site\CmsSiteGroups.sql" />
+    <Build Include="Tables\Template\CmsTemplates.sql" />
+    <Build Include="Tables\Template\CmsTemplateRegions.sql" />
+    <Build Include="Tables\Page\CmsPages.sql" />
+    <Build Include="Tables\Page\CmsPageControls.sql" />
+    <Build Include="Tables\Page\CmsViewComponents.sql" />
+    <Build Include="Tables\Page\CmsViewComponentDatas.sql" />
+    <Build Include="Tables\Revision\CmsEntityTypeDefinitions.sql" />
+    <Build Include="Tables\Revision\CmsEntityRevisions.sql" />
+    <Build Include="Tables\Revision\CmsABTests.sql" />
+    <Build Include="Tables\Content\CmsContentTypes.sql" />
+    <Build Include="Tables\Content\CmsContents.sql" />
+    <Build Include="Tables\Media\CmsMimeTypes.sql" />
+    <Build Include="Tables\Media\CmsMedias.sql" />
+    <Build Include="Tables\Media\CmsMediaContents.sql" />
+    <Build Include="Tables\Media\CmsMediaTags.sql" />
+    <Build Include="Tables\Media\CmsMediaContentTags.sql" />
+    <Build Include="Tables\Media\CmsMediaFiles.sql" />
+    <Build Include="Tables\Media\CmsMediaContentFiles.sql" />
+    <Build Include="Tables\Meta\CmsEntityMetaFields.sql" />
+    <Build Include="Tables\Meta\CmsEntityMetaLinks.sql" />
+    <Build Include="Tables\Meta\CmsEntityMetaLinkDefaults.sql" />
+    <Build Include="Tables\Meta\CmsEntityMetas.sql" />
+    <Build Include="Tables\Meta\CmsEntityProperties.sql" />
+    <Build Include="Views\ViewCmsMetaItems.sql" />
+    <Build Include="Functions\cms_udf_GetLatestCompletedEntityRevisions.sql" />
+    <Build Include="StoredProcedures\Frontend\Page\sp_PageInfoFind.sql" />
+    <Build Include="StoredProcedures\Frontend\Page\sp_PageGetForFront.sql" />
+    <Build Include="StoredProcedures\Frontend\Page\sp_ViewComponentGetForFront.sql" />
+    <Build Include="StoredProcedures\Frontend\UI\sp_MenuGetHierarchy.sql" />
+    <Build Include="StoredProcedures\Frontend\Special\sp_EntityTypeDefinitionGetAll.sql" />
+    <Build Include="StoredProcedures\Frontend\Content\sp_ContentGetForFront.sql" />
+    <Build Include="StoredProcedures\Frontend\Content\sp_ContentFindByContentTypeIdWithPaging.sql" />
+    <Build Include="Settings\cms_operator.sql" />
+    <Build Include="Tables\Rewrite\CmsRewriteRules.sql" />
+    <Build Include="StoredProcedures\Frontend\Rewrite\sp_RewriteRuleGetForFront.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\CmsEntityTypeDefinitions_Data.txt" />
+  </ItemGroup>
+</Project>

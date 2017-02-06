@@ -1,0 +1,5 @@
+﻿CREATE LOGIN [cms_operator] WITH PASSWORD = 'CAR/Mi8xd6zuEl125ZsJRUg1hiSx+xHEPLYmJmIK7tI='
+GO
+
+ALTER LOGIN [cms_operator] DISABLE
+GO
